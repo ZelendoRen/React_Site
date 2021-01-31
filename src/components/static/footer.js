@@ -6,6 +6,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import { Link } from "react-router-dom";
 
 
 
@@ -25,7 +26,8 @@ export default function Footer() {
 
                         <List >
                             {menuData.map((menuData) => (
-                                <ListItem button className={classes.menu_items}>{menuData.title}</ListItem>
+
+                                <ListItem button className={classes.menu_items}><Link className={classes.menuItem} to={menuData.url}>{menuData.title}</Link></ListItem>
                             ))}
                         </List>
 

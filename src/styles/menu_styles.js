@@ -56,5 +56,9 @@ const useStyles = makeStyles((theme) => ({
             color: 'rgba(0,0,0,0.9)',
         }
     },
+    menuItem: {
+        textDecoration: 'none',
+        color: 'rgba(255,255,255,0.75)',
+    }
 }))
 export default useStyles

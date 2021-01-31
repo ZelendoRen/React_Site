@@ -1,6 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+    },
     footerBox: {
         backgroundColor: "#161616",
         color: 'white',
@@ -94,7 +96,10 @@ const useStyles = makeStyles((theme) => ({
 
 
     },
-
+    menuItem: {
+        textDecoration: 'none',
+        color: 'rgba(255,255,255,0.75)',
+    }
 }));
 
 export default useStyles

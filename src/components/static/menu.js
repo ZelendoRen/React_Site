@@ -8,6 +8,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import useStyles from "../../styles/menu_styles";
 import { menuData } from '../../data/data';
+import { Link } from "react-router-dom";
+
 export default function SideBar() {
     const classes = useStyles();
 
@@ -23,7 +25,7 @@ export default function SideBar() {
 
             <List >
                 {menuData.map((menuData) => (
-                    <ListItem button>{menuData.title}</ListItem>
+                    <ListItem button><Link className={classes.menuItem} to={menuData.url}>{menuData.title}</Link></ListItem>
                 ))}
 
                 <Button className={classes.menu_support} variant="contained" color="primary">Отправить заявку</Button>
