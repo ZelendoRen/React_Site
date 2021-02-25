@@ -1,7 +1,6 @@
 import { Grid, Container, Typography, List, ListItem, Button, TextField, IconButton, Paper } from '@material-ui/core';
 import useStyles from "../../styles/aboutCompany_styles";
 import React from 'react';
-import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import abouy_company from '../../img/abouy_company.png'
 
 export default function AboutCompany() {

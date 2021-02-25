@@ -5,6 +5,8 @@ import Footer from './components/static/footer'
 import { BrowserRouter, Route } from 'react-router-dom'
 import MainPage from './pages/main_page'
 import AboutPage from './pages/about_page'
+import Translator from './pages/translator'
+import Model from './pages/model'
 import companyHistory from "./components/static/companyHistory";
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
         <SideBar />
         <Route exact path='/' component={MainPage} />
         <Route path='/about' component={AboutPage} />
+        <Route path='/translator' component={Translator} />
+        <Route path='/client' component={Model} />
+
         <Footer />
       </BrowserRouter>
 

@@ -24,7 +24,7 @@ export default function Footer() {
                     <Grid item xs={12} sm={4} className={classes.footer_firstBlock}>
                         <Typography className={classes.footer_title}>Навигация</Typography>
 
-                        <List >
+                        <List className={classes.menu}>
                             {menuData.map((menuData) => (
 
                                 <ListItem button className={classes.menu_items}><Link className={classes.menuItem} to={menuData.url}>{menuData.title}</Link></ListItem>
@@ -35,8 +35,8 @@ export default function Footer() {
                     <Grid item xs={12} sm={4} className={classes.footer_recall}>
                         <Typography className={classes.footer_title}>Заказать звонок</Typography>
                         <div className={classes.footer_form}>
-                            <TextField className={classes.footer_form_field} size='small' id="name" label="Имя" />
-                            <TextField className={classes.footer_form_field} size='small' id="phone" label="Номер телефона" />
+                            <TextField className={classes.footer_form_field} size='small' label="Имя" />
+                            <TextField className={classes.footer_form_field} size='small' label="Номер телефона" />
                             <Button className={classes.footer_form_button} variant="contained" color="primary"> Заказать</Button>
                         </div>
 

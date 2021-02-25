@@ -39,6 +39,12 @@ const useStyles = makeStyles((theme) => ({
 
         }
     },
+    menu: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignContent: 'center',
+
+    },
     footer_bottom: {
         width: '90%',
         display: 'flex',
