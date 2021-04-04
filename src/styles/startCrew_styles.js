@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     mainBlock: {
-        paddingTop: '10%',
+        height: '600px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
